@@ -1,0 +1,200 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+$icon-anim-time = 0.5s
+
+html {
+	box-sizing: border-box;
+
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	font-family: sans-serif;
+}
+
+.pic{
+	opacity: 100%;
+	width: 500px;
+	height: 500px;
+	background: transparent url(../image/space.jpg) no-repeat center;
+	border: 1px solid #000;
+}
+
+.icon {
+	text-decoration: none;
+	color: #fff;
+	font-size: 80px;
+	line-height: 100px;
+	text-align: center;
+	padding: 10px 10px 0px 10px;
+	height: 100px;
+	width: 100px;
+
+
+	position: absolute;
+
+	cursor: pointer;
+	transition: all ease $icon-anim-time;
+}
+
+.main {
+	z-index: 8;
+}
+
+.second{
+	font-size: 0;
+}
+
+.captain {
+	z-index: 7;
+}
+
+.iron {
+	z-index: 6;
+}
+
+.thor {
+	z-index: 5;
+}
+
+.hulk {
+	z-index: 4;
+}
+.widow {
+	z-index: 3
+}
+
+.hawk {
+	z-index: 2;
+}
+
+.sheild {
+	z-index: 1;
+}
+
+.qwote-btn{
+	position: relative;
+	margin: 100px}
+
+
+ {
+}
+.qwote-btn:hover .second{
+	font-size: 3.5rem;
+}
+	.qwote-btn:hover .iron {
+		color: red;
+		margin-top: -100px;
+		animation: btn-rotate .75s ease;
+		transition: all 0.75s ease;
+	}
+
+	.qwote-btn:hover .thor {
+		color: grey;
+		margin-left: 70px;
+		margin-top: -70px;
+		animation: btn-rotate .75s ease;
+		transition: all 0.75s ease;
+		transition-delay:.1s;
+		-webkit-animation-delay:.1s;
+		animation-delay:.1s;
+	}
+
+	.qwote-btn:hover .captain {
+		color: blue;
+		margin-left: 100px;
+		animation: btn-rotate .75s ease;
+		transition: all 0.75s ease;
+		transition-delay:.2s;
+		-webkit-animation-delay:.2s;
+		animation-delay:.2s;
+	}
+
+	
+	.qwote-btn:hover .hulk {
+		color: green;
+		margin-left: 70px;
+		margin-top: 70px;
+		animation: btn-rotate .75s ease;
+		transition: all 0.75s ease;
+		transition-delay:.3s;
+		-webkit-animation-delay:.3s;
+		animation-delay:.3s;
+	}
+	.qwote-btn:hover .widow {
+		color: black;
+		margin-top: 100px;
+		animation: btn-rotate .75s ease;
+		transition: all 0.75s ease;
+		transition-delay:.4s;
+		-webkit-animation-delay:.4s;
+		animation-delay:.4s;
+	}
+
+	.qwote-btn:hover .hawk {
+		color: purple;
+		margin-left: -70px;
+		margin-top:70px;
+		animation: btn-rotate .75s ease;
+		transition: all 0.5s ease;
+		transition-delay:.75s;
+		-webkit-animation-delay:.5s;
+		animation-delay:.5s;
+	}
+
+	.qwote-btn:hover .shield {
+		margin-left: -100px;
+		animation: btn-rotate .75s ease;
+		transition: all 0.75s ease;
+		transition-delay:.6s;
+		-webkit-animation-delay:.6s;
+		animation-delay:.6s;
+	}
+
+	.qwote-btn:hover .panther{
+		margin-left: -70px;
+		margin-top: -70px; 
+		animation: btn-rotate .75s ease;
+		transition: all 0.75s ease;
+		transition-delay:.7s;
+		-webkit-animation-delay:.7s;
+		animation-delay:.7s;
+	}
+}
+
+@-moz-keyframes btn-rotate {
+  0% {
+    transform: rotate(160deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes btn-rotate {
+  0% {
+    transform: rotate(160deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes btn-rotate {
+  0% {
+    transform: rotate(160deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes btn-rotate {
+  0% {
+    transform: rotate(160deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
