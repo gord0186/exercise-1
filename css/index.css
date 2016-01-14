@@ -35,13 +35,16 @@ html {
 
 .main {
 	z-index: 8;
-	margin-top: -17px;
-	margin-left: -12px;
+	margin-top: -77px;
+	margin-left: -72px;
+	z-index: 1;
+	padding: 60px;
 }
 
 .second{
 	font-size: 0;
-	color: grey;
+	z-index: 2;
+	color: rgba(0,0,0,.4);
 
 }
 .group{
@@ -53,23 +56,31 @@ html {
 .qwote-btn{
 	position: relative;
 	top: 40%;
+	padding: 20px;
 }
 
 .iron:hover{
-	background-color: blue;
-	color: white;
+	color: red;
 }
 
 .captain:hover{
-	background-color: blue;
-	color:white;
+	color:blue;
 }
 
-.hulk:hover{
-	background-color: green;
+.hulk:hover{	
 	color: rgba(5,66,2,1);
+	transition: all .2s ease;
 }
 
+.hawk:hover{
+	color: purple;
+	-webkit-animation-delay:0s;
+	animation-delay:0s;
+}
+
+.shield:hover {
+	color: #000;
+}
  .qwote-btn:hover .second{
 	font-size: 3.5rem;
 	border-radius: 400px;
@@ -92,18 +103,14 @@ html {
 		font-size: 3.25rem;
 		animation: btn-rotate .75s ease;
 		transition: all 0.75s ease;
-		transition-delay:.1s;
-		-webkit-animation-delay:.1s;
-		animation-delay:.1s;
+		animation-fill-mode: both;
 	}
 
 	.qwote-btn:hover .captain {
 		margin-left: 100px;
 		animation: btn-rotate .75s ease;
 		transition: all 0.75s ease;
-		transition-delay:.2s;
-		-webkit-animation-delay:.2s;
-		animation-delay:.2s;
+		animation-fill-mode: both;
 	}
 
 	
@@ -112,17 +119,13 @@ html {
 		margin-top: 70px;
 		animation: btn-rotate .75s ease;
 		transition: all 0.75s ease;
-		transition-delay:.3s;
-		-webkit-animation-delay:.3s;
-		animation-delay:.3s;
+		animation-fill-mode: both;
 	}
 	.qwote-btn:hover .widow {
 		margin-top: 100px;
 		animation: btn-rotate .75s ease;
 		transition: all 0.75s ease;
-		transition-delay:.4s;
-		-webkit-animation-delay:.4s;
-		animation-delay:.4s;
+		animation-fill-mode: both;
 	}
 
 	.qwote-btn:hover .hawk {
@@ -130,18 +133,14 @@ html {
 		margin-top:70px;
 		animation: btn-rotate .75s ease;
 		transition: all 0.5s ease;
-		transition-delay:.75s;
-		-webkit-animation-delay:.5s;
-		animation-delay:.5s;
+		animation-fill-mode: both;
 	}
 
 	.qwote-btn:hover .shield {
 		margin-left: -100px;
 		animation: btn-rotate .75s ease;
 		transition: all 0.75s ease;
-		transition-delay:.6s;
-		-webkit-animation-delay:.6s;
-		animation-delay:.6s;
+		animation-fill-mode: both;
 	}
 
 	.qwote-btn:hover .panther{
@@ -149,9 +148,7 @@ html {
 		margin-top: -70px; 
 		animation: btn-rotate .75s ease;
 		transition: all 0.75s ease;
-		transition-delay:.7s;
-		-webkit-animation-delay:.7s;
-		animation-delay:.7s;
+		animation-fill-mode: both;
 	}
 }
 
