@@ -131,6 +131,7 @@ html {
 	.qwote-btn:hover .hawk {
 		margin-left: -70px;
 		margin-top:70px;
+		font-size: 3rem;
 		animation: btn-rotate .75s ease;
 		transition: all 0.5s ease;
 		animation-fill-mode: both;
