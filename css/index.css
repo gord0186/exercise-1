@@ -17,10 +17,12 @@ html {
 }
 
 .pic{
+	margin:0;
+	padding: 0;
 	opacity: 100%;
-	width: 500px;
+	width: 100%;
 	height: 500px;
-	background: transparent url(../image/space.jpg) no-repeat center;
+	background: rgba(130,45,3,1);
 	border: 1px solid #000;
 }
 
@@ -28,75 +30,66 @@ html {
 	text-decoration: none;
 	color: #fff;
 	font-size: 80px;
-	line-height: 100px;
-	text-align: center;
-	padding: 10px 10px 0px 10px;
-	height: 100px;
-	width: 100px;
-
-
 	position: absolute;
-
-	cursor: pointer;
-	transition: all ease $icon-anim-time;
 }
 
 .main {
 	z-index: 8;
+	margin-top: -17px;
+	margin-left: -12px;
 }
 
 .second{
 	font-size: 0;
-}
+	color: grey;
 
-.captain {
-	z-index: 7;
 }
+.group{
 
-.iron {
-	z-index: 6;
-}
-
-.thor {
-	z-index: 5;
-}
-
-.hulk {
-	z-index: 4;
-}
-.widow {
-	z-index: 3
-}
-
-.hawk {
-	z-index: 2;
-}
-
-.sheild {
-	z-index: 1;
+	top: 200px;
+	text-align: center;
 }
 
 .qwote-btn{
 	position: relative;
-	margin: 100px}
-
-
- {
+	top: 40%;
 }
-.qwote-btn:hover .second{
+
+.iron:hover{
+	background-color: blue;
+	color: white;
+}
+
+.captain:hover{
+	background-color: blue;
+	color:white;
+}
+
+.hulk:hover{
+	background-color: green;
+	color: rgba(5,66,2,1);
+}
+
+ .qwote-btn:hover .second{
 	font-size: 3.5rem;
+	border-radius: 400px;
+	line-height: 0px;
+	width: 3.5rem;
+	height: 3.5rem;
+	padding: 3px;
+	display: inherit-block;
 }
 	.qwote-btn:hover .iron {
-		color: red;
 		margin-top: -100px;
 		animation: btn-rotate .75s ease;
 		transition: all 0.75s ease;
+		animation-fill-mode: both;
 	}
 
 	.qwote-btn:hover .thor {
-		color: grey;
 		margin-left: 70px;
 		margin-top: -70px;
+		font-size: 3.25rem;
 		animation: btn-rotate .75s ease;
 		transition: all 0.75s ease;
 		transition-delay:.1s;
@@ -105,7 +98,6 @@ html {
 	}
 
 	.qwote-btn:hover .captain {
-		color: blue;
 		margin-left: 100px;
 		animation: btn-rotate .75s ease;
 		transition: all 0.75s ease;
@@ -116,7 +108,6 @@ html {
 
 	
 	.qwote-btn:hover .hulk {
-		color: green;
 		margin-left: 70px;
 		margin-top: 70px;
 		animation: btn-rotate .75s ease;
@@ -126,7 +117,6 @@ html {
 		animation-delay:.3s;
 	}
 	.qwote-btn:hover .widow {
-		color: black;
 		margin-top: 100px;
 		animation: btn-rotate .75s ease;
 		transition: all 0.75s ease;
@@ -136,7 +126,6 @@ html {
 	}
 
 	.qwote-btn:hover .hawk {
-		color: purple;
 		margin-left: -70px;
 		margin-top:70px;
 		animation: btn-rotate .75s ease;
