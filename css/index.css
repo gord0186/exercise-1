@@ -14,16 +14,39 @@ html {
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
 	font-family: sans-serif;
+	width: 100%;
+	margin: 0;
+}
+
+body{
+	margin:0;
+	padding: 0;
 }
 
 .pic{
 	margin:0;
 	padding: 0;
-	opacity: 100%;
+}
+
+li {
+	text-decoration: none;
+}
+.background{
 	width: 100%;
-	height: 500px;
+	height: 27.5rem;
 	background: rgba(130,45,3,1);
-	border: 1px solid #000;
+	z-index: 1;
+	opacity: .5;
+	position: absolute;
+}
+
+.cap img{
+	width: 100%;
+	height: 30rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
 }
 
 .icon {
@@ -31,6 +54,7 @@ html {
 	color: #fff;
 	font-size: 80px;
 	position: absolute;
+	top: 200px
 }
 
 .main {
@@ -39,6 +63,7 @@ html {
 	margin-left: -72px;
 	z-index: 1;
 	padding: 60px;
+	opacity: 100%;
 }
 
 .second{
@@ -48,7 +73,6 @@ html {
 
 }
 .group{
-
 	top: 200px;
 	text-align: center;
 }
@@ -60,18 +84,31 @@ html {
 }
 
 .iron:hover{
-	color: red;
+	color: rgba(255,212,0,1);
+	background-color: rgba(173,33,0,1) ;
+	animation: zoom-in .2s ease;
 }
 
+.thor:hover{
+	color: rgba(82,161,255,1);
+
+}
 .captain:hover{
-	color:blue;
+	color: #fff;
+	background-color: rgba(40,83,206,1) ;
+
 }
 
 .hulk:hover{	
-	color: rgba(5,66,2,1);
+	color: rgba(32,102,3,1);
 	transition: all .2s ease;
 }
 
+.widow:hover{
+	color: rgba(229,5,5,1);
+	background-color: rgba(0,0,0,1);
+
+}
 .hawk:hover{
 	color: purple;
 	-webkit-animation-delay:0s;
@@ -80,14 +117,15 @@ html {
 
 .shield:hover {
 	color: #000;
+	background: #fff;
 }
+
  .qwote-btn:hover .second{
 	font-size: 3.5rem;
 	border-radius: 400px;
 	line-height: 0px;
 	width: 3.5rem;
 	height: 3.5rem;
-	padding: 3px;
 	display: inherit-block;
 }
 	.qwote-btn:hover .iron {
@@ -123,9 +161,12 @@ html {
 	}
 	.qwote-btn:hover .widow {
 		margin-top: 100px;
+		padding-top: .25rem;
+		font-size: 3rem;
 		animation: btn-rotate .75s ease;
 		transition: all 0.75s ease;
 		animation-fill-mode: both;
+
 	}
 
 	.qwote-btn:hover .hawk {
